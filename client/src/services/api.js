@@ -27,4 +27,9 @@ export const removeCartItem = (id) =>
 export const checkout = () =>
   API.post("/orders/checkout");
 
+export const getFavorites = () =>
+  API.get("/favorites");
+export const toggleFavorite = (productId) =>
+  API.post("/favorites/toggle", { productId });
+
 export default API;

@@ -8,6 +8,7 @@ import Register from "./pages/Register";
 import Catalog from "./pages/Catalog";
 import Cart from "./pages/Cart";
 import OrderSuccess from "./pages/OrderSuccess";
+import Favorites from "./pages/Favorites";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/catalog" element={<Catalog />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/order-success/:id" element={<OrderSuccess />} />
+        <Route path="/favorites" element={<Favorites />} />
       </Routes>
 
     </BrowserRouter>
